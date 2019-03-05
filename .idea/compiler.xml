@@ -10,8 +10,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="hystrix" target="1.7" />
-      <module name="spring-cloud-knowledge" target="1.5" />
+      <module name="hystrix" target="8" />
+      <module name="spring-cloud-knowledge" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

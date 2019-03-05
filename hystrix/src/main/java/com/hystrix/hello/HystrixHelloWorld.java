@@ -60,6 +60,7 @@ public class HystrixHelloWorld extends HystrixCommand<String> {
                 @Override
                 public void onCompleted() {
                     // 这里可以什么都不做
+                    System.out.println("这里可以什么都不做");
                 }
 
                 @Override
@@ -69,7 +70,8 @@ public class HystrixHelloWorld extends HystrixCommand<String> {
 
                 @Override
                 public void onNext(String v) {
-                    System.out.println("onNext: " + v);
+
+                    System.out.println("onNext: " + Thread.currentThread().getName() + v);
                 }
 
             });
